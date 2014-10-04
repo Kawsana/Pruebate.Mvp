@@ -7,7 +7,7 @@
 	<application>
 		<resource-bundle>
 			<base-name>resources</base-name>
-			<var>msgs</var>
+			<var>lang</var>
 		</resource-bundle>
 	</application>
 </faces-config>
