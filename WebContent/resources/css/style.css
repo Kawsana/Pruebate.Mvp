@@ -1,105 +1,91 @@
 body {
-	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-	color: #6d7b8d;
+	font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	color:#6d7b8d;
 }
-
 h1 {
-    color: #56a5ec;
-    font-size: xx-large;
-    font-weight: 500;
-    margin: auto;
-    text-align: center;
+    color:#56a5ec;
+    font-size:xx-large;
+    font-weight:500;
+    margin:auto;
+    text-align:center;
 }
-
 span {
-	white-space: pre-line;
+	white-space:pre-line;
 }
-
 a {
-	color: #56a5ec;
-	text-decoration: none;
+	color:#56a5ec;
+	text-decoration:none;
 }
-
 .label-form {
-	color: #616D7E;
-	font-size: 15px;
+	color:#616D7E;
+	font-size:15px;
 }
-
 .txt-form {
-	padding: 5px 0;
-	float: right;
-	color: #1589FF;
+	padding:5px 0;
+	float:right;
+	color:#1589FF;
 }
-
 .page-content {
-	width: 990px;
-	margin: auto;
+	width:990px;
+	margin:auto;
 }
-
 .features-section {
-	float: left;
-	margin-left: 20px;
+	float:left;
+	margin-left:20px;
 }
-
 .feature {
-    font-size: large;
-    margin-left: 20px;
-    margin-top: 15px;
-    position: fixed;
+    font-size:large;
+    margin-left:20px;
+    margin-top:15px;
+    position:fixed;
 }
-
 .login {
-    float: right;
-    margin: 25px 40px 0px 0px;
-    width: 280px;
+    float:right;
+    margin:25px 40px 0px 0px;
+    width:280px;
 }
-
 .row {
-	height: 60px;
+	height:60px;
 }
-
 .button {
-    background-color: #56a5ec;
-    border: medium none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 15px;
-    padding: 6px 25px;
+    background-color:#56a5ec;
+    border:medium none;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:15px;
+    padding:6px 25px;
 }
-
 .center {
-    width: 50%;
-    margin: 0 auto;
+    width:50%;
+    margin:0 auto;
 }
-
 .title {
-	margin: 80px 0 60px;	
+	margin:80px 0 70px;	
 }
-
 .beta-message {
-    bottom: 150px;
-    font-size: 15px;
-    margin: 0 0 0 9%;
-    position: fixed;
+    bottom:100px;
+    font-size:15px;
+    margin:0 0 0 9%;
+    position:fixed;
 }
-
 .register {
-    bottom: 120px;
-    margin-left: 150px;
-    position: fixed;
+    bottom:80px;
+    margin-left:150px;
+    position:fixed;
 }
-
 .message {
-	display: initial;
-    margin: 20px 0 0 20px;
-    position: fixed;
+	display:initial;
+    margin:20px 0 0 20px;
+    position:fixed;
 }
-
 .link {
-	color: #56a5ec;	
+	color:#56a5ec;	
 }
-
 .bullet {
-	width: 55px;	
+	width:55px;	
 }
-
+.beta {
+	float:right;
+	width:90px;
+	margin-top:-140px;
+}
