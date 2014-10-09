@@ -31,17 +31,20 @@
 				</span>
 			</div>
 			<div class="login">
-				<div class="row">
-					<h:outputLabel class="label-form" value="#{lang.lblUsername}" />
-					<h:inputText class="txt-form" value="" />
-				</div>
-				<div class="row">
-					<h:outputLabel class="label-form" value="#{lang.lblPassword}" />
-					<h:inputSecret class="txt-form" value="" />
-				</div>
-				<div class="center">
-					<h:button class="button" value="#{lang.btnLogin}" />
-				</div>
+				<h:form>
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblUsername}" />
+						<h:inputText class="txt-form" value="#{userController.username}" />
+					</div>
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblPassword}" />
+						<h:inputSecret class="txt-form" value="#{userController.password}" />
+					</div>
+					<div class="center">
+						<h:commandButton action="#{userController.login()}" value="#{lang.btnLogin}" 
+							styleClass="button" />
+					</div>
+				</h:form>
 			</div>
 			<div class="beta-message">
 				<h:graphicImage class="bullet" library="images" name="star.png"/>

@@ -38,6 +38,7 @@ a {
 
 .features-section {
 	float: left;
+	margin-left: 20px;
 }
 
 .feature {
@@ -49,7 +50,7 @@ a {
 
 .login {
     float: right;
-    margin-top: 25px;
+    margin: 25px 40px 0px 0px;
     width: 280px;
 }
 
