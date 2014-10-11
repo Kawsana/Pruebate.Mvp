@@ -3,57 +3,64 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
-	<h:head>
-		<h:outputStylesheet library="css" name="style.css" />
-		<title>#{lang.lblAppName}</title>
-	</h:head> 
-	<h:body>
-		<div class="page-content">
-			<div class="title">
-				<h1>#{lang.lblTitle}</h1>
+	<ui:composition template="#{lang.urlEmptyTemplate}">
+		<ui:define name="header">
+			<script type="text/javascript">       
+			$(document).ready(function() {
+				$('#frmLogin\\:txtUsername').focus();
+			});
+			</script>
+		</ui:define>
+		<ui:define name="content">
+			<div class="page-content">
+				<div class="title">
+					<h1>#{lang.lblTitle}</h1>
+				</div>
+				<div>
+					<h:graphicImage class="beta" library="images" name="beta.png"/>
+				</div>
+				<div class="features-section">
+					<span>
+						<h:graphicImage class="bullet" library="images" name="check.png"/>
+						<h:outputLabel class="feature" value="#{lang.lblFeatureOne}" />
+					</span>
+					<span>
+						<h:graphicImage class="bullet" library="images" name="check.png"/>
+						<h:outputLabel class="feature" value="#{lang.lblFeatureTwo}" />
+					</span>
+					<span>
+						<h:graphicImage class="bullet" library="images" name="check.png"/>
+						<h:outputLabel class="feature" value="#{lang.lblFeatureThree}" />
+					</span>
+					<span>
+						<h:graphicImage class="bullet" library="images" name="check.png"/>
+						<h:outputLabel class="feature" value="#{lang.lblFeatureFour}" />
+					</span>
+				</div>
+				<div class="login">
+					<h:form id="frmLogin">
+						<div class="row">
+							<h:outputLabel class="label-form" value="#{lang.lblUsername}" />
+							<h:inputText id="txtUsername" class="txt-form" value="#{userController.username}" autofocus="true" />
+						</div>
+						<div class="row">
+							<h:outputLabel class="label-form" value="#{lang.lblPassword}" />
+							<h:inputSecret class="txt-form" value="#{userController.password}" />
+						</div>
+						<div class="center">
+							<h:commandButton action="#{userController.login()}" value="#{lang.btnLogin}" 
+								styleClass="button" />
+						</div>
+					</h:form>
+				</div>
+				<div class="beta-message">
+					<h:graphicImage class="bullet" library="images" name="star.png"/>
+					<h:outputLabel class="message" value="#{lang.msgBetaMessage}" />
+					<h:form>
+						<h:commandLink action="register" value="#{lang.lnkRegister}" class="register" />
+					</h:form>
+				</div>
 			</div>
-			<div>
-				<h:graphicImage class="beta" library="images" name="beta.png"/>
-			</div>
-			<div class="features-section">
-				<span>
-					<h:graphicImage class="bullet" library="images" name="check.png"/>
-					<h:outputLabel class="feature" value="#{lang.lblFeatureOne}" />
-				</span>
-				<span>
-					<h:graphicImage class="bullet" library="images" name="check.png"/>
-					<h:outputLabel class="feature" value="#{lang.lblFeatureTwo}" />
-				</span>
-				<span>
-					<h:graphicImage class="bullet" library="images" name="check.png"/>
-					<h:outputLabel class="feature" value="#{lang.lblFeatureThree}" />
-				</span>
-				<span>
-					<h:graphicImage class="bullet" library="images" name="check.png"/>
-					<h:outputLabel class="feature" value="#{lang.lblFeatureFour}" />
-				</span>
-			</div>
-			<div class="login">
-				<h:form>
-					<div class="row">
-						<h:outputLabel class="label-form" value="#{lang.lblUsername}" />
-						<h:inputText class="txt-form" value="#{userController.username}" />
-					</div>
-					<div class="row">
-						<h:outputLabel class="label-form" value="#{lang.lblPassword}" />
-						<h:inputSecret class="txt-form" value="#{userController.password}" />
-					</div>
-					<div class="center">
-						<h:commandButton action="#{userController.login()}" value="#{lang.btnLogin}" 
-							styleClass="button" />
-					</div>
-				</h:form>
-			</div>
-			<div class="beta-message">
-				<h:graphicImage class="bullet" library="images" name="star.png"/>
-				<h:outputLabel class="message" value="#{lang.msgBetaMessage}" />
-				<h:link value="#{lang.lnkRegister}" class="register"/>
-			</div>
-		</div>
-	</h:body>
+		</ui:define>
+	</ui:composition>
 </html>
