@@ -11,14 +11,14 @@
 		</resource-bundle>
 	</application>
 	<navigation-rule>
-		<from-view-id>index.xhtml</from-view-id>
+		<from-view-id>/index.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>synonym</from-outcome>
 			<to-view-id>/pages/synonym.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>index.xhtml</from-view-id>
+		<from-view-id>/index.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>register</from-outcome>
 			<to-view-id>/pages/register.xhtml</to-view-id>
