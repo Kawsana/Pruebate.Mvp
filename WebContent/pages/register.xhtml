@@ -5,8 +5,62 @@
       xmlns:h="http://java.sun.com/jsf/html"> 
 
 	<ui:composition template="#{lang.urlEmptyTemplate}">
+		<ui:define name="header">
+			<script type="text/javascript">
+			$(document).ready(function() {
+				$('#frmSignUp\\:txtName').focus();
+			});
+			</script>
+		</ui:define>
 		<ui:define name="content">
-			Register
+			<div class="register-title">
+				<h1>#{lang.lblSignUp}</h1>
+			</div>
+			<h:form id="frmSignUp">
+				<div class="signUp-left">
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblName}" />
+						<h:inputText id="txtName" class="txt-form" />
+					</div>
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblHighSchool}" />
+						<h:selectOneMenu class="som-form">
+							<f:selectItems value="#{singUpController.highSchools}" var="hs" itemLabel="#{hs.value}"/>
+						</h:selectOneMenu>
+					</div>
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblEmail}" />
+						<h:inputText class="txt-form" />
+					</div>
+				</div>
+				<div class="signUp-right">
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblLastName}" />
+						<h:inputText class="txt-form" />
+					</div>
+					<div class="row">
+						<h:outputLabel class="label-form" value="#{lang.lblSex}" />
+						<h:selectOneRadio class="sor-form">
+						   	<f:selectItem itemValue="1" itemLabel="#{lang.lblMan}" />
+						   	<f:selectItem itemValue="0" itemLabel="#{lang.lblWoman}" />
+						</h:selectOneRadio>
+					</div>
+				</div>
+				<div class="signUp-questions">
+					<div class="signUp-questions-row">
+						<h:outputLabel class="label-form" value="#{lang.lblSignUpQuestion1}" />
+						<h:inputTextarea cols="70" rows="2" styleClass="ta-form"/>
+					</div>
+					<div class="signUp-questions-row">
+						<h:outputLabel class="label-form" value="#{lang.lblSignUpQuestion2}" />
+						<h:inputTextarea cols="70" rows="2" styleClass="ta-form"/>
+					</div>
+					<div class="signUp-questions-row">
+						<h:outputLabel class="label-form" value="#{lang.lblSignUpQuestion3}" />
+						<h:inputTextarea cols="70" rows="2" styleClass="ta-form"/>
+					</div>
+				</div>
+			</h:form>
 		</ui:define>
 	</ui:composition>
 </html>

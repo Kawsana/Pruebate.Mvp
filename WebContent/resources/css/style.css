@@ -25,6 +25,25 @@ a {
 	float:right;
 	color:#1589FF;
 }
+.som-form{
+	float:right;
+	width:138px;
+	padding:5px 0;
+	color:#1589FF;
+}
+.sor-form{
+	float:right;
+}
+.sor-form input[type="radio"]:checked + label {
+    color:#1589FF;
+}
+.ta-form{
+	color:#1589FF;
+	font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-size: small;
+	float:left;
+	margin: 20px 0 30px;
+}
 .page-content {
 	width:990px;
 	margin:auto;
@@ -62,6 +81,9 @@ a {
 .title {
 	margin:80px 0 70px;	
 }
+.register-title {
+	margin:30px 0;	
+}
 .beta-message {
     bottom:100px;
     font-size:15px;
@@ -88,4 +110,23 @@ a {
 	float:right;
 	width:90px;
 	margin-top:-140px;
+}
+.signUp-left{
+    float:left;
+    margin-left:40px;
+    width:280px;
+}
+.signUp-right{
+	float:right;
+    margin-right:100px;
+    width:280px;
+}
+.signUp-questions{
+	clear:left;
+    float:left;
+    width:400px;
+    margin-left:40px;
+}
+.signUp-questions-row{
+	heigth:100px;
 }
