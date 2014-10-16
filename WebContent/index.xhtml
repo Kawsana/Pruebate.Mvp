@@ -41,14 +41,14 @@
 				<h:form id="frmLogin">
 					<div class="row">
 						<h:outputLabel class="label-form" value="#{lang.lblUsername}" />
-						<h:inputText id="txtUsername" class="txt-form" value="#{userController.username}" />
+						<h:inputText id="txtUsername" class="txt-form" value="#{indexController.username}" />
 					</div>
 					<div class="row">
 						<h:outputLabel class="label-form" value="#{lang.lblPassword}" />
-						<h:inputSecret class="txt-form" value="#{userController.password}" />
+						<h:inputSecret class="txt-form" value="#{indexController.password}" />
 					</div>
 					<div class="center">
-						<h:commandButton action="#{userController.login()}" value="#{lang.btnLogin}" styleClass="button" />
+						<h:commandButton action="#{indexController.login()}" value="#{lang.btnLogin}" styleClass="button" />
 					</div>
 				</h:form>
 			</div>

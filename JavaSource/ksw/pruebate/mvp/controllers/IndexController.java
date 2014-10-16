@@ -6,7 +6,7 @@ import javax.faces.bean.ManagedBean;
 import ksw.pruebate.mvp.services.UserService;
 
 @ManagedBean
-public class UserController {
+public class IndexController {
 	
 	@EJB
 	private UserService userService;
